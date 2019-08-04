@@ -1,0 +1,36 @@
+@import './theme.scss';
+
+.theme-color{
+    color: $theme;
+}
+
+.warn-color{
+    color: $warn;
+}
+
+
+.error-color{
+    color: $error;
+}
+
+.success-color{
+    color: $success;
+}
+
+
+.theme-bg-color{
+    background-color: $theme;
+}
+
+.warn-bg-color{
+    background-color: $warn;
+}
+
+
+.error-bg-color{
+    background-color: $error;
+}
+
+.success-bg-color{
+    background-color: $success;
+}

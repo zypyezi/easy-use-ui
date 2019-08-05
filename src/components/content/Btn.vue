@@ -6,11 +6,15 @@
         </div>
         <div class="ui-doc-phone">
             <card>
-                <eui-btn></eui-btn>
+                <eui-btn text="default" type="default"></eui-btn>
+                <eui-btn text="primary" type="primary"></eui-btn>
+                <eui-btn text="disabled" disabled></eui-btn>
+                <eui-btn text="small" size="small"></eui-btn>
+                <eui-btn text="large" size="large"></eui-btn>
+                <!-- <eui-btn text="细边框" type="primary" hairline></eui-btn> -->
             </card>
         </div>
 
-        
     </div>
 </template>
 

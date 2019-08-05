@@ -1,6 +1,6 @@
 <template>
     <div class="vue-app">
-        <doc-nav @change="changeNav"></doc-nav>
+        <!-- <doc-nav @change="changeNav"></doc-nav> -->
         <div class="ui-doc-content-box">
             <router-view></router-view>
         </div>

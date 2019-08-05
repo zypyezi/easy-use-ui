@@ -8,9 +8,11 @@ import vconsole from 'vconsole'
 import './style/index.scss'
 
 
-import EuiBtn from '../packages/Button'
+import EuiBtn from '../packages/Button/index.js'
+import EuiLoading from '../packages/Loading/index.js'
+import EuiVLoad from '../packages/VLoad/index.js'
 
-Vue.use(EuiBtn)
+Vue.use(EuiBtn).use(EuiLoading).use(EuiVLoad)
 
 
 if(process.env.NODE_ENV == 'development'){

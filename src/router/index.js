@@ -14,13 +14,26 @@ const routes = COMPONENTS_LIST.map(item => {
     }
 })
 
+
+var com = COMPONENTS_LIST[1]
+
 export default new Router({
     routes:[
+        // {
+        //     path:'/',
+        //     name: 'Index',
+        //     component: Index,
+        //     children: routes
+        // }
         {
             path:'/',
             name: 'Index',
             component: Index,
-            children: routes
+            children: [{
+                path: '/' + com.path,
+                name: com.id,
+                component: com.component
+            } ]
         }
     ]
 })

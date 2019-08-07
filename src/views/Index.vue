@@ -54,6 +54,7 @@
         width: 375px;
         height: 640px;
         display: inline-block;
+        position: relative;
     }
 
 </style>

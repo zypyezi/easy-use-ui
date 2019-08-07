@@ -1,12 +1,27 @@
 <template>
-    <div class="eui-mask">
+    <div class="eui-mask" :style="{zIndex: zIndex}" @click="handleClick" v-show="show">
         <slot></slot>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'eui-mask'
+    name: 'eui-mask',
+    props: {
+        zIndex: {
+            type: Number,
+            default: 2000
+        },
+        show: {
+            type: Boolean,
+            default: false
+        }
+    },
+    methods: {
+        handleClick () {
+            this.$emit('click')
+        }
+    }
 }
 </script>
 
@@ -17,7 +32,6 @@ export default {
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: 2001;
         background-color: rgba(0, 0, 0, 0.3);
     }
 </style>

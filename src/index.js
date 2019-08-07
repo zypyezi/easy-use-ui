@@ -11,8 +11,9 @@ import './style/index.scss'
 import EuiBtn from '../packages/Button/index.js'
 import EuiLoading from '../packages/Loading/index.js'
 import EuiVLoad from '../packages/VLoad/index.js'
+import EuiPopup from '../packages/Popup/index.js'
 
-Vue.use(EuiBtn).use(EuiLoading).use(EuiVLoad)
+Vue.use(EuiBtn).use(EuiLoading).use(EuiVLoad).use(EuiPopup)
 
 
 if(process.env.NODE_ENV == 'development'){

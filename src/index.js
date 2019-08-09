@@ -12,8 +12,9 @@ import EuiBtn from '../packages/Button/index.js'
 import EuiLoading from '../packages/Loading/index.js'
 import EuiVLoad from '../packages/VLoad/index.js'
 import EuiPopup from '../packages/Popup/index.js'
+import Toast from '../packages/Toast/index.js'
 
-Vue.use(EuiBtn).use(EuiLoading).use(EuiVLoad).use(EuiPopup)
+Vue.use(EuiBtn).use(EuiLoading).use(EuiVLoad).use(EuiPopup).use(Toast)
 
 
 if(process.env.NODE_ENV == 'development'){

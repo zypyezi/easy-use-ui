@@ -11,22 +11,16 @@
 <script>
 import EuiMask from '../Mask/Index.vue'
 import Overlay from '../Mixins/Popup/overlay.js'
+import Popup from '../Mixins/Popup/index.js'
 export default {
     name: 'eui-popup',
     components: {EuiMask},
-    mixins: [Overlay],
+    mixins: [Overlay, Popup],
     model: {
         prop: 'show',
         event: 'changeShow'
     },
-    watch: {
-        show(val){
-            val ? this.open() : this.close() 
-        },
-        overlay() {
-            this.renderOverlay()
-        }
-    },
+    
     created () {
 
     },
@@ -51,29 +45,7 @@ export default {
         }
     },
     methods: {
-        // 打开弹窗
-        open () {
-            this.$emit('open')
-            if (this.opened) {
-                return 
-            }
-            this.opened = true
-            this.renderOverlay()
-        },
-        // 关闭弹窗
-        close () {
-            this.$emit('close')
-            if (!this.opened) {
-                return 
-            }
-            this.opened = false
-            this.closeOverlay(this)
-        },
-        // 关闭遮罩层
-        onClickOverlay () {
-            this.close()
-            this.$emit('changeShow', false)
-        }
+        
     }
 }
 </script>

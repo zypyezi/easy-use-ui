@@ -15,7 +15,7 @@ const routes = COMPONENTS_LIST.map(item => {
 })
 
 
-var com = COMPONENTS_LIST[3]
+var com = COMPONENTS_LIST[4]
 
 export default new Router({
     routes:[
